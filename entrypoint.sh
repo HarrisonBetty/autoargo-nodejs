@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
 # 设置各变量
-UUID='de04add9-5c68-8bab-950c-08cd5320df18'
+UUID='dc8a0cb2-32bb-4d46-ac69-f1308d9e52e4'
 VMESS_WSPATH='/vmess'
 VLESS_WSPATH='/vless'
 TROJAN_WSPATH='/trojan'
 SS_WSPATH='/shadowsocks'
-NEZHA_SERVER="probe.nezha.org"
-NEZHA_PORT=5555
-NEZHA_KEY="p2RYaBPrCEiFro7W0Y"
+NEZHA_SERVER=""
+NEZHA_PORT=
+NEZHA_KEY=""
 
 # 安装系统依赖
 check_dependencies() {
@@ -102,7 +102,7 @@ generate_config() {
                 }
             },
             "sniffing": {
-                "enabled": true,
+                "enabled": false,
                 "destOverride": [
                     "http",
                     "tls"
@@ -129,7 +129,7 @@ generate_config() {
                 }
             },
             "sniffing": {
-                "enabled": true,
+                "enabled": false,
                 "destOverride": [
                     "http",
                     "tls"
@@ -156,7 +156,7 @@ generate_config() {
                 }
             },
             "sniffing": {
-                "enabled": true,
+                "enabled": false,
                 "destOverride": [
                     "http",
                     "tls"
@@ -184,7 +184,7 @@ generate_config() {
                 }
             },
             "sniffing": {
-                "enabled": true,
+                "enabled": false,
                 "destOverride": [
                     "http",
                     "tls"
